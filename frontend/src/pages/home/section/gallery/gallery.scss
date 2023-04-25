@@ -1,0 +1,42 @@
+.spikes {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 1;
+    background-image: linear-gradient(135deg, white 25%, transparent 25%),
+      linear-gradient(225deg, white 25%, transparent 25%);
+    background-size: 30px 30px;
+  }
+}
+
+.galleryHome {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .section-title {
+    text-align: center;
+    margin-bottom: 100px;
+    color: #fff;
+
+    span {
+      color: var(--main-color);
+    }
+  }
+
+  .show_image img {
+    width: 100%;
+    opacity: 0.8;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2) rotate(5deg);
+      opacity: 1;
+    }
+  }
+}

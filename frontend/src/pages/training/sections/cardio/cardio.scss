@@ -1,0 +1,8 @@
+.cardio {
+  img {
+    border-radius: 1vw !important;
+    &:hover {
+      transform: skew(1deg);
+    }
+  }
+}

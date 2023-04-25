@@ -1,0 +1,42 @@
+.page404 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(../../../public/images/gif.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+
+  h1 {
+    position: absolute;
+    top: 10rem;
+    font-size: 10rem;
+    color: #00000063;
+  }
+
+  h2 {
+    position: absolute;
+    bottom: 10rem;
+    font-size: 32px;
+  }
+
+  h5 {
+    position: absolute;
+    bottom: 6rem;
+    color: #9c9c9c;
+  }
+
+  a {
+    position: absolute;
+    bottom: 1rem;
+    background: #f08000;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    border-radius: 12px;
+  }
+}

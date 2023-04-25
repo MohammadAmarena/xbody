@@ -1,0 +1,192 @@
+.pagePrices {
+  padding-top: 50px;
+  padding-bottom: 100px;
+
+  .section-title {
+    margin: 0 auto 40px;
+    border: 2px solid black;
+    padding: 10px 20px;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+    transition: var(--main-transition);
+
+    &::before,
+    &::after {
+      content: "";
+      width: 12px;
+      height: 12px;
+      background-color: var(--main-color);
+      position: absolute;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &::before {
+      left: -30px;
+    }
+
+    &::after {
+      right: -30px;
+    }
+
+    &:hover::before {
+      z-index: -1;
+      animation: left-move 0.5s linear forwards;
+    }
+
+    &:hover::after {
+      z-index: -1;
+      animation: right-move 0.5s linear forwards;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: white;
+      border: 2px solid black;
+      transition-delay: 0.5s;
+    }
+
+    @keyframes left-move {
+      50% {
+        left: 0;
+        width: 12px;
+        height: 12px;
+      }
+      100% {
+        left: 0;
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    @keyframes right-move {
+      50% {
+        right: 0;
+        width: 12px;
+        height: 12px;
+      }
+      100% {
+        right: 0;
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .box {
+    position: relative;
+    box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+    transition: var(--main-transition);
+    background: white;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 0;
+      height: 50%;
+      background-color: #f6f6f6;
+      position: absolute;
+      z-index: -1;
+      transition: var(--main-transition);
+    }
+
+    &::before {
+      left: 0;
+      top: 0;
+    }
+
+    &::after {
+      right: 0;
+      bottom: 0;
+    }
+
+    &:hover::before,
+    &:hover::after {
+      width: 100%;
+    }
+
+    .title {
+      font-weight: bold;
+      margin: 30px 0;
+      font-size: 25px;
+      letter-spacing: -1px;
+    }
+
+    .price {
+      margin-bottom: 20px;
+
+      .amount {
+        font-size: 60px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: var(--main-color);
+      }
+
+      .time {
+        color: #777;
+      }
+    }
+
+    ul {
+      text-align: left;
+      list-style: none;
+      padding: 0;
+
+      li {
+        font-size: 14px;
+        padding: 10px;
+        border-top: 1px solid #999;
+      }
+    }
+
+    button {
+      display: block;
+      border: 2px solid var(--main-color);
+      color: var(--main-color);
+      margin: 30px auto 0;
+      padding: 10px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: var(--main-transition);
+      background: transparent;
+
+      &:hover {
+        background-color: var(--main-color-alt);
+        border-color: var(--main-color-alt);
+        color: white;
+      }
+    }
+  }
+
+  .dots {
+    background-image: url("/public/images/Icons/dots_1.png");
+    height: 180px;
+    width: 200px;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+
+  .dots-up {
+    top: 300px;
+    right: 0;
+  }
+
+  .dots-down {
+    bottom: 100px;
+    left: 0;
+  }
+
+  @media (max-width: 991px) {
+    .dots-up,
+    .dots-down {
+      display: none;
+    }
+  }
+}

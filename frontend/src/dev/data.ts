@@ -1,0 +1,86 @@
+import { Product } from "../types/Product";
+
+export const products = [
+  {
+    _id: "1",
+    name: "EXTREME ISO WHEY (1,8 kg)",
+    slug: "extreme-iso-whey",
+    category: "Proteine",
+    image: "../public/images/Products/2139_1.jpg",
+    images: [
+      "../public/images/Products/2139_2.jpg",
+      "../public/images/Products/2139_5.jpg",
+    ],
+    price: 84.99,
+    countInStock: 10,
+    brand: "BODY ATTACK",
+    rating: 1.5,
+    numReviews: 10,
+    description: [
+      "100 % CFM Whey Protein Isolat von mehr als 90 % Isolat-Anteil",
+      "Aus bester Milch von irischen Weidekühen - Grassfütterung",
+      "Laktosearm - gluten- aspartamfrei & fettarm - perfekt löslich & hervorragend verträglich",
+    ],
+  },
+  {
+    _id: "2",
+    name: "NATURAL VEGAN PROTEIN (750g)",
+    slug: "natural-vegan-protein",
+    category: "Proteine",
+    image: "../public/images/Products/2456_1.jpg",
+    images: [
+      "../public/images/Products/2456_2.jpg",
+      "../public/images/Products/2456_4.jpg",
+    ],
+    price: 20.99,
+    countInStock: 20,
+    brand: "MY SUPPS",
+    rating: 2.7,
+    numReviews: 10,
+    description: [
+      "100% natürliches Premium Erbsenprotein ohne künstliche Aromen",
+      "Proteinanteil von 80% mit BCAA & Glutamin",
+      "Vegan - laktosefrei - glutenfrei & gentechnisch unverändert",
+    ],
+  },
+  {
+    _id: "3",
+    name: "WHEY GOLD STANDARD (908g)",
+    slug: "whey-gold-standard",
+    category: "Proteine",
+    image: "../public/images/Products/2770_1.jpg",
+    images: [
+      "../public/images/Products/2770_2.jpg",
+      "../public/images/Products/2770_3.jpg",
+    ],
+    price: 43.99,
+    countInStock: 5,
+    brand: "OPTIMUM NUTRITION",
+    rating: 3.1,
+    numReviews: 17,
+    description: [
+      "Reichhaltig an Proteinen & Aminosäuren",
+      "BCAA & Glutamin",
+      "Hervorragender Geschmack und wenig Fett",
+    ],
+  },
+  {
+    _id: "4",
+    name: "CASEIN GOLD STANDARD (1,8kg)",
+    slug: "casein-gold-standard",
+    category: "Proteine",
+    image:
+      "../public/images/Products/100+Gold+Standard+Casein+Schokolade+55+1820+Gramm.jpg",
+    images: [],
+    price: 79.99,
+    countInStock: 15,
+    brand: "OPTIMUM NUTRITION",
+    rating: 4.5,
+    numReviews: 14,
+    description: [
+      "24 g Mizellares Casein pro Portion",
+      "ca. 5 g BCAA pro Portion",
+      "ca. 5 g Glutamin pro Portion",
+    ],
+  },
+];

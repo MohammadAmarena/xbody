@@ -1,0 +1,27 @@
+.button a {
+  font-size: 16px;
+  color: var(--color-ligth);
+  border-radius: var(--border-radius-primary);
+  padding: 10px;
+  letter-spacing: 0.5px;
+  transition: all var(--main-transition);
+  cursor: pointer;
+}
+
+.primary-btn a {
+  background-color: var(--main-color);
+}
+
+.primary-btn a:hover {
+  background-color: var(--main-color-alt);
+  color: var(--color-ligth);
+}
+
+.secondary-btn a {
+  border: 1px solid var(--main-color);
+}
+
+.secondary-btn a:hover{
+  color: var(--color-ligth);
+  background-color: var(--main-color);
+}

@@ -1,0 +1,102 @@
+@url = http://localhost:5011
+
+### Api Docs
+GET {{url}}
+
+### Get Products
+GET {{url}}/products
+
+### Get Users
+GET {{url}}/users
+
+### Get Slug
+GET {{url}}/products/slug/vitamin
+
+### Get Product
+GET {{url}}/products/6406737d1cfd9a1ee64ad4f0
+
+### Get Seed
+GET {{url}}/seed
+
+### Pad login
+POST {{url}}/users/signin
+content-type: application/json
+
+{
+    "email": "admin@example.com",
+    "password": "badPassword"
+}
+
+### Good Signin
+POST {{url}}/users/signin
+content-type: application/json
+
+{
+    "email": "admin@example.com",
+    "password": "12345"
+}
+
+### Signup
+POST {{url}}/users/signup
+content-type: application/json
+
+{
+    "name": "test",
+    "email": "user2@example.com",
+    "password": "333"
+}
+
+### Signout
+GET {{url}}/users/signout
+
+### EDIT Profile
+PUT {{url}}/users/640775640127fe3cb63ae73e
+content-type: application/json
+
+{
+    "name": "test111",
+    "email": "test111@example.com",
+    "password": "111",
+}
+
+### Send Mail
+POST {{url}}/contact
+content-type: application/json
+
+{
+    "firstName": "Mohammad", "lastName":"Amaren", "phoneNumber":"004917664329252", "message":"Testtttttttttttttttts", "email":"test@gmail.com"
+}
+
+### Get Packets
+GET {{url}}/packets
+
+### Get Packet
+GET {{url}}/packets/641a5ddfae87ad8974f4e8b4
+
+### Get Packet
+GET {{url}}/packets/641a5ddfae87ad8974f4e8b4/leistungen
+
+###Edit Features
+PUT {{url}}/packets/641a5ddfae87ad8974f4e8b4/leistungen
+Content-Type: application/json
+
+{
+    "leistungen": [
+        "Geräte- + Cardiotraining",
+        "Angebot für Studenten",
+        "LadyFit Area*",
+        "Freihantelbereich",
+        "Functional Training"
+    ]
+}
+
+###Pay
+PUT {{url}}/orders/6413c7f3013d416a8a97ed2e/pay
+content-type: application/json
+
+{
+    "paymentId": "6413c7f3013d416a8a97ed2e",
+    "status": "PAY_SUCCESS",
+    "update_time": "2023-03-17T01:52:51.465+00:00",
+    "email_address": "bilal.joma@gmail.com",
+};

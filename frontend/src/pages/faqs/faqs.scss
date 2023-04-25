@@ -1,0 +1,36 @@
+.pre-container {
+  min-height: 100vh;
+
+  .banner {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+      url("../../public/images/Home/FAQS.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .banner-text {
+      background-color: rgba(31, 30, 30, 0.144);
+    }
+  }
+
+  h1{
+    font-size: 60px;
+    color: var(--main-color);
+  }
+  
+  
+  h2{
+    color: var(--main-color);
+  }
+
+  p{
+    font-size: 25px;
+  }
+
+  .accordion {
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-active-bg: var(--main-color);
+    --bs-accordion-active-color: #fff;
+  }
+}

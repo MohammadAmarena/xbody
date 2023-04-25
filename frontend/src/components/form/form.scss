@@ -1,0 +1,39 @@
+.form {
+  .sendSuccessfulArea {
+    color: White;
+    text-shadow: 2 2 2 orange;
+  }
+  input {
+
+    border: none;
+
+    &:focus {
+      box-shadow: none;
+      outline: none;
+    }
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+  }
+}
+
+  textarea {
+    border: none;
+    resize: none;
+    height: 70px;
+
+    &:focus {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+  button {
+    background-color: #e67e27;
+    padding: .5rem;
+    border-radius: 1vw;
+    transition: .3s;
+    &:hover {
+      background-color: rgb(255, 102, 0);
+    }
+  }
+}

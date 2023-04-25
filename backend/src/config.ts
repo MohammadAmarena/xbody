@@ -1,0 +1,1 @@
+// export const NodeMailerTest = process.env.NodeMailerTest
