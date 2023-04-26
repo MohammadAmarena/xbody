@@ -1,5 +1,5 @@
 {
-  "name": "xbody-ts-mern",
+  "name": "xbody",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,6 +8,14 @@
     "start": "TG_ALLOW_MIXED=ALLOW node backend/dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohammadAmarena/xbody.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MohammadAmarena/xbody/issues"
+  },
+  "homepage": "https://github.com/MohammadAmarena/xbody#readme"
 }
